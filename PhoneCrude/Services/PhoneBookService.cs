@@ -18,15 +18,14 @@ namespace PhoneCrude.Services
                     Console.WriteLine($"{PhoneBooks[iteration].Id}- {PhoneBooks[iteration].Name} {PhoneBooks[iteration].PhoneNumber}");
        
                 }
-                
             }
-
-            Console.WriteLine("You don't have any phonebook");
+            
+           
 
         }
         //When program ask id but user entered string format in this case programmer didn't catch exception that's why program throw exception
         //when I delete phonebook by id the id is also deleted completely and cannot be replaced by new one.
-        //
+        
 
         public void AddPhoneBook(PhoneBook phoneBook)
         {
