@@ -13,12 +13,14 @@ namespace PhoneCrud
             PhoneBookService phoneBookService = new PhoneBookService();
             bool process = true;
             do
+                
             {
                 PrintMenu();
 
                 Console.Write("Enter your choice:");
                 string userChoice = Console.ReadLine(); //Why I gave user's input with string format because if I give in int format when user enter string format like("fsdf") the program gives unhandiling exception 
-                
+
+                char[] chars = userChoice.ToCharArray();
                 switch (userChoice)
                 {
                     case "1":
