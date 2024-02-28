@@ -1,6 +1,5 @@
 ﻿using PhoneCrude.Models;
 
-
 namespace PhoneCrude.Services
 {
     internal class PhoneBookService
@@ -12,28 +11,17 @@ namespace PhoneCrude.Services
         {
             for (int iteration = 0; iteration < 10; iteration++)
             {
-                
                 if (PhoneBooks[iteration] is not null)
                 {
                     Console.WriteLine($"{PhoneBooks[iteration].Id}- {PhoneBooks[iteration].Name} {PhoneBooks[iteration].PhoneNumber}");
-       
                 }
             }
-            
-           
-
         }
-        //When program ask id but user entered string format in this case programmer didn't catch exception that's why program throw exception
-        //when I delete phonebook by id the id is also deleted completely and cannot be replaced by new one.
-        
-
         public void AddPhoneBook(PhoneBook phoneBook)
         {
             phoneBook.Id = id++;
-
             for(int iteration = 0; iteration < 10; iteration++)
             {
-                
                 if (PhoneBooks[iteration] is null)
                 {
                     PhoneBooks[iteration] = phoneBook;
@@ -68,7 +56,6 @@ namespace PhoneCrude.Services
                     return;
                 }
             }
-
             Console.WriteLine($"PhoneBook with ID {id} not found.");
         }
 
@@ -85,10 +72,6 @@ namespace PhoneCrude.Services
             Console.WriteLine($"PhoneBook with ID {id} not found.");
 
         }
-
-
-
-
     }
 
 
