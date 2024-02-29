@@ -11,4 +11,4 @@ I think after seeing my project's demo, it will be clear to understand😊
 
 ![demo](/PhoneCrude/assets/demo.gif)
 
-If you are want to create or like this kind of console applications you can follow me: https://github.com/YaqubAliy02
+If you want to create or like this kind of console applications you can follow me: https://github.com/YaqubAliy02
